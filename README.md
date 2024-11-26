@@ -3,7 +3,7 @@ For test purposes currently program stopes after reaching 1000 ms, to avoid this
         {
             flag = false;
         }
-
+        
 To run this project
 1. Downloud files, the project structer should be likw:
     project-root/
