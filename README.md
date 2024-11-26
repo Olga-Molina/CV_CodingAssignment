@@ -10,7 +10,7 @@ For test purposes currently program stopes after reaching 1000 ms, to avoid this
 
 The project written in c++ 20 (CMakeList also addresses it: 
 
-# Specify the C++ standard
+
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
