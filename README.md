@@ -7,7 +7,17 @@ For test purposes currently program stopes after reaching 1000 ms, to avoid this
             flag = false;
             
         }
-        
+
+The project written in c++ 20 (CMakeList also addresses it: 
+
+# Specify the C++ standard
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+)
+For smaller versions code and cMakeList.txt sgould be adjasted
+
+
 To run this project
 1. Downloud files, the project structer should be like:
    
