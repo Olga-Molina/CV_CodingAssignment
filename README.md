@@ -16,7 +16,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 )
-For smaller versions code and cMakeList.txt sgould be adjasted
+For smaller versions code and cMakeList.txt should be adjasted
 
 
 To run this project
