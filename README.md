@@ -1,3 +1,8 @@
+For test purposes currently program stopes after reaching 1000 ms, to avoid this please comment lines 61-64 in mainstorage.cpp:
+        if (delta > 1000)
+        {
+            flag = false;
+        }
 
 To run this project
 1. Downloud files, the project structer should be likw:
