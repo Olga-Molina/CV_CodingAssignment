@@ -112,11 +112,6 @@ protected:
 	static float calc_angle (unsigned int delta) {
 		return MainStorage::GetInstance()->calculate_angle(delta);
 	};
-
-public:
-	Task () {};
-	Task(const Task &t) {};
-
 };
 
 std::mutex  Task::_lock;
@@ -136,7 +131,7 @@ public:
 };
 
 //Derived class Task20 that updates z, yaw in MainStorage and sending calculations of x & pitch
-class Task20 : private Task {
+class Task20 : public Task {
 public:
 
 	static tuple<float, float> StartProcessing(tuple<float, float> tup, unsigned int delta) {
@@ -150,7 +145,7 @@ public:
 	}
 };
 //Derived class Task40 that updates roll, pitch in MainStorage and sending calculations of y & yaw
-class Task40 : private Task {
+class Task40 : public Task {
 public:
 	static tuple<float, float> StartProcessing(tuple<float, float> tup, unsigned int delta) {
 		float roll, pitch;
