@@ -1,4 +1,4 @@
-For test purposes currently program stopes after reaching 1000 ms, to avoid this please comment lines 61-64 in mainstorage.cpp:
+* For test purposes currently program stopes after reaching 1000 ms, to avoid this please comment lines 61-64 in mainstorage.cpp:
 
         if (delta > 1000)
         
@@ -8,45 +8,45 @@ For test purposes currently program stopes after reaching 1000 ms, to avoid this
             
         }
 
-The project written in c++ 20 (CMakeList also addresses it: 
+* The project written in c++ 20 (CMakeList also addresses it: 
 
 
-set(CMAKE_CXX_STANDARD 20)
+        set(CMAKE_CXX_STANDARD 20)
 
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+        set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-)
-For smaller versions code and cMakeList.txt should be adjasted
+   )
+        For smaller versions code and cMakeList.txt should be adjasted
 
 
-To run this project
-1. Downloud files, the project structer should be like:
+* To run this project
+        1. Downloud files, the project structer should be like:
    
-    project-root/
+            project-root/
    
-    ├── CMakeLists.txt
+            ├── CMakeLists.txt
    
-    ├── src/
+            ├── src/
    
-    ├── mainstorage.cpp
+            ├── mainstorage.cpp
    
-    └── mainstorage.h
+            └── mainstorage.h
 
-3. In the project root directory (project-root)
-   create a build folder:
+        3. In the project root directory (project-root)
+           create a build folder:
    
-     mkdir build
+             mkdir build
    
-     cd build
+             cd build
    
-4. Generate the build system using CMake:
+        4. Generate the build system using CMake:
    
-     cmake ..
+             cmake ..
   
-5. Build the project:
+        5. Build the project:
    
-     cmake --build .
+             cmake --build .
   
-6. Run the resulting executable:
+        6. Run the resulting executable:
  
-    ./MyProject
+            ./MyProject
