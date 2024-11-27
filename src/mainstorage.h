@@ -129,7 +129,7 @@ struct Message
 
 queue<Message> queue_x, queue_y, queue_z, queue_roll, queue_pitch, queue_yaw;
 mutex mtx_x, mtx_y, mtx_z, mtx_roll, mtx_pitch, mtx_yaw; // Mutex for each queue
-condition_variable cv_x, cv_y, cv_z, cv_roll, cv_pitch, cv_yaw; // Condition variables for each queue
+
 
 // Function to send a message to a specific queue
 void sendMessage(queue<Message>& queue, mutex& mtx, int senderId, float content, enum fields f) 
