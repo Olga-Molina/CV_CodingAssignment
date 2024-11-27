@@ -1,4 +1,4 @@
-* For test purposes currently program stopes after reaching 1000 ms, to avoid this please comment line 162 in mainstorage.h:
+* For test purposes currently program stopes after exceeding 1000 ms, to avoid this please comment line 162 in mainstorage.h:
 
         flag = (delta > 1000) ? false:true;
 
