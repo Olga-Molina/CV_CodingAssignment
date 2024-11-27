@@ -22,9 +22,9 @@
    
             ├── src/
    
-            ├── mainstorage.cpp
+                ├── mainstorage.cpp
    
-            └── mainstorage.h
+                └── mainstorage.h
 
         3. In the project root directory (project-root)
            create a build folder:
