@@ -28,7 +28,7 @@ private:
 
 protected:
 	MainStorage() {};
-	~MainStorage() {}
+	~MainStorage() {};
 	float x {-1};
 	float y {-1};
 	float z {-1};
@@ -41,12 +41,12 @@ public:
 	void operator=(const MainStorage &) = delete;
 	static MainStorage *getInstance();
 
-	float get_x (void) const {return x;}
-	float get_y (void) const {return y;}
-	float get_z (void) const {return z;}
-	float get_roll (void) const {return roll;}
-	float get_pitch (void) const {return pitch;}
-	float get_yaw (void) const {return yaw;}
+	float get_x () const {return x;}
+	float get_y () const {return y;}
+	float get_z () const {return z;}
+	float get_roll () const {return roll;}
+	float get_pitch () const {return pitch;}
+	float get_yaw () const {return yaw;}
 	
 	float calculate_by_time (unsigned int t)
 	{
