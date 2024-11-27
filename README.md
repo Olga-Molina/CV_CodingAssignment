@@ -1,12 +1,6 @@
-* For test purposes currently program stopes after reaching 1000 ms, to avoid this please comment lines 61-64 in mainstorage.cpp:
+* For test purposes currently program stopes after reaching 1000 ms, to avoid this please comment line 162 in mainstorage.h:
 
-        if (delta > 1000)
-        
-        {
-        
-            flag = false;
-            
-        }
+        flag = (delta > 1000) ? false:true;
 
 * The project written in c++ 20 (CMakeList also addresses it: 
 
